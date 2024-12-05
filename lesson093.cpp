@@ -3,7 +3,7 @@
 using namespace std;
 
 
-/**/
+/*
 int main() {
 	int Num1{ 5 }, Num2{ 9 };
 
@@ -34,6 +34,34 @@ int main() {
 
 	//Numberptr = &Number2;
 
+	cout << "-------------------------------\n\n";
+	int Number3{ 50 };
+	int Number4{ 19 };
+
+	const int* const Numberptr2{ &Number3 };
+	cout << Number3 << endl;
+	cout << &Number3 << endl;
+	cout << Numberptr2 << endl;
+	cout << *Numberptr2 << endl << endl;
+
+	//Numberptr2 = &Number4;
+	//*Numberptr2 = 31;
+
+	cout << "-------------------------------\n\n";
+
+	const double PI{ 3.1415 };
+	//PI = 3453.23423;
+
+	//double* PIptr{ &PI };
+	//double* const PIptr{ &PI };
+
+	const double* PIptr{ &PI };
+	const double* const PIptr2{ &PI };
+
+	cout << PIptr << endl;
+	cout << *PIptr << endl;
+
+
 	return 0;
 }
-
+*/
